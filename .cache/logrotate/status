@@ -1,0 +1,16 @@
+logrotate state -- version 2
+"/home/framgia-ror/.cache/upstart/unity7.log" 2017-2-7-4:7:10
+"/home/framgia-ror/.cache/upstart/hud.log" 2017-2-7-4:7:10
+"/home/framgia-ror/.cache/upstart/ssh-agent.log" 2017-2-7-4:7:10
+"/home/framgia-ror/.cache/upstart/bamfdaemon.log" 2016-11-3-13:29:44
+"/home/framgia-ror/.cache/upstart/gpg-agent.log" 2017-2-7-4:7:10
+"/home/framgia-ror/.cache/upstart/at-spi2-registryd.log" 2016-11-4-10:4:32
+"/home/framgia-ror/.cache/upstart/upstart-event-bridge.log" 2017-2-7-4:7:10
+"/home/framgia-ror/.cache/upstart/update-notifier-release.log" 2017-2-7-4:7:10
+"/home/framgia-ror/.cache/upstart/unity-panel-service.log" 2017-2-7-4:7:10
+"/home/framgia-ror/.cache/upstart/*.log" 2016-11-4-10:0:0
+"/home/framgia-ror/.cache/upstart/gnome-keyring-ssh.log" 2017-2-7-4:7:10
+"/home/framgia-ror/.cache/upstart/dbus.log" 2017-2-7-4:7:10
+"/home/framgia-ror/.cache/upstart/indicator-sound.log" 2017-2-7-4:7:10
+"/home/framgia-ror/.cache/upstart/window-stack-bridge.log" 2017-2-7-4:7:10
+"/home/framgia-ror/.cache/upstart/unity-settings-daemon.log" 2017-2-7-4:7:10

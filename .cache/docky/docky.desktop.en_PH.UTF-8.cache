@@ -1,0 +1,1984 @@
+[/usr/share/ubuntu/applications/org.gnome.Software.desktop]
+Name=Ubuntu Software
+Comment=Add, remove or update software on this computer
+Icon=ubuntusoftware
+Exec=gnome-software %U
+Terminal=false
+Type=Application
+Categories=GNOME;GTK;System;PackageManager;
+Keywords=Updates;Upgrade;Sources;Repositories;Preferences;Install;Uninstall;Program;Software;App;Store;
+StartupNotify=true
+MimeType=x-scheme-handler/appstream;
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Product=gnome-software
+X-GNOME-Bugzilla-Component=gnome-software
+X-GNOME-UsesNotifications=true
+DBusActivatable=true
+X-Ubuntu-Gettext-Domain=gnome-software
+
+[/usr/share/applications/activity-log-manager.desktop]
+Version=1.0
+X-Ubuntu-Gettext-Domain=activity-log-manager
+Name=Activity Log Manager
+GenericName=Activity Log Manager
+Comment=Configure what gets logged in your Zeitgeist activity log
+X-Ubuntu-Software-Center-Name=Activities and Privacy Manager Tool
+Type=Application
+Exec=activity-log-manager
+Icon=activity-log-manager
+Categories=GNOME;GTK;Utility;
+NotShowIn=Unity;
+
+[/usr/share/applications/apport-gtk.desktop]
+Name=Report a problem...
+Comment=Report a malfunction to the developers
+Exec=/usr/share/apport/apport-gtk -c %f
+Icon=apport
+Terminal=false
+Type=Application
+MimeType=text/x-apport;
+Categories=GNOME;GTK;Utility;
+NoDisplay=true
+StartupNotify=true
+X-Ubuntu-Gettext-Domain=apport
+
+[/usr/share/applications/apturl.desktop]
+Name=AptURL
+Exec=apturl %u
+Type=Application
+NoDisplay=true
+Categories=System;
+MimeType=x-scheme-handler/apt;
+
+[/usr/share/applications/bluetooth-sendto.desktop]
+Name=Bluetooth Transfer
+Comment=Send files via Bluetooth
+Icon=bluetooth
+Exec=bluetooth-sendto
+Terminal=false
+Type=Application
+Categories=GTK;GNOME;Utility;FileTools;
+StartupNotify=true
+NoDisplay=true
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Product=gnome-bluetooth
+X-GNOME-Bugzilla-Component=sendto
+X-GNOME-Bugzilla-Version=3.18.2
+X-Ubuntu-Gettext-Domain=gnome-bluetooth2
+
+[/usr/share/applications/checkbox-converged.desktop]
+Name=Checkbox
+Comment=System testing utility for Ubuntu
+Exec=qmlscene --settings=/usr/share/checkbox-converged/settings.json $@ /usr/share/checkbox-converged/checkbox-touch.qml
+Icon=checkbox-touch.svg
+Terminal=false
+Type=Application
+X-Ubuntu-Touch=true
+
+[/usr/share/applications/cheese.desktop]
+Name=Cheese
+GenericName=Webcam Booth
+X-GNOME-FullName=Cheese Webcam Booth
+Comment=Take photos and videos with your webcam, with fun graphical effects
+Keywords=photo;video;webcam;
+Exec=cheese
+Terminal=false
+Type=Application
+StartupNotify=true
+Icon=cheese
+Categories=GNOME;AudioVideo;Video;Recorder;
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Product=cheese
+X-GNOME-Bugzilla-Component=general
+X-GNOME-Bugzilla-Version=3.18.1
+X-Ubuntu-Gettext-Domain=cheese
+X-AppStream-Ignore=true
+
+[/usr/share/applications/compiz.desktop]
+Type=Application
+Name=Compiz
+Exec=compiz
+NoDisplay=true
+X-GNOME-WMSettingsModule=compiz
+X-GNOME-Autostart-Phase=WindowManager
+X-GNOME-Provides=windowmanager
+X-GNOME-WMName=compiz
+X-GnomeWMSettingsLibrary=compiz
+X-Ubuntu-Gettext-Domain=compiz
+
+[/usr/share/applications/credentials-preferences.desktop]
+Name=Online Accounts
+Comment=Online account credentials and settings
+Exec=credentials-preferences
+Icon=credentials-preferences
+Terminal=false
+Type=Application
+StartupNotify=true
+NotShowIn=Unity
+Categories=GNOME;GTK;Settings;DesktopSettings;X-GNOME-PersonalSettings;
+X-Ubuntu-Gettext-Domain=credentials-control-center
+
+[/usr/share/applications/debian-uxterm.desktop]
+Name=UXTerm
+#GenericName=Terminal
+Comment=standard terminal emulator for the X window system
+Exec=uxterm
+Terminal=false
+Type=Application
+#Encoding=UTF-8
+Icon=xterm-color
+Categories=System;TerminalEmulator;Utility;
+X-Desktop-File-Install-Version=0.22
+
+[/usr/share/applications/debian-xterm.desktop]
+Name=XTerm
+#GenericName=Terminal
+Comment=standard terminal emulator for the X window system
+Exec=xterm
+Terminal=false
+Type=Application
+#Encoding=UTF-8
+Icon=xterm-color
+Categories=System;TerminalEmulator;Utility;
+X-Desktop-File-Install-Version=0.22
+
+[/usr/share/applications/deja-dup-preferences.desktop]
+Version=1.0
+X-Ubuntu-Gettext-Domain=deja-dup
+Name=Backups
+Comment=Change your backup settings
+Icon=deja-dup
+TryExec=deja-dup-preferences
+Exec=deja-dup-preferences
+StartupNotify=true
+Type=Application
+Categories=Settings;Utility;Archiving;GNOME;GTK;X-GNOME-SystemSettings;
+NotShowIn=Unity;
+Keywords=déjà;deja;dup;
+X-AppInstall-Ignore=true
+X-AppStream-Ignore=true
+Actions=BackUpNow;
+
+[/usr/share/applications/deja-dup.desktop]
+Version=1.0
+X-Ubuntu-Gettext-Domain=deja-dup
+Name=Backups
+X-Ubuntu-Software-Center-Name=Déjà Dup Backup Tool
+Icon=deja-dup
+TryExec=deja-dup
+Exec=deja-dup --backup
+StartupNotify=true
+NoDisplay=true
+Type=Application
+Categories=Utility;Archiving;GNOME;GTK;
+X-GNOME-UsesNotifications=true
+
+[/usr/share/applications/display-im6.desktop]
+Version=1.0
+Name=ImageMagick (display Q16)
+Comment=Display and edit image files
+Exec=/usr/bin/display-im6 %f
+Terminal=false
+Icon=display-im6.q16
+Type=Application
+Categories=Graphics;
+Keywords=Image;Slideshow;View;Transform;Enhance;F/X;Special Effects
+MimeType=image/avs;image/bie;image/x-ms-bmp;image/cmyk;image/dcx;image/eps;image/fax;image/fits;image/gif;image/gray;image/jpeg;image/pjpeg;image/miff;image/mono;image/mtv;image/x-portable-bitmap;image/pcd;image/pcx;image/pdf;image/x-portable-graymap;image/pict;image/png;image/x-portable-anymap;image/x-portable-pixmap;image/ps;image/rad;image/x-rgb;image/rgba;image/rla;image/rle;image/sgi;image/sun-raster;image/targa;image/tiff;image/uyvy;image/vid;image/viff;image/x-xbitmap;image/x-xpixmap;image/x-xwindowdump;image/x-icon;image/yuv;
+
+[/usr/share/applications/display-im6.q16.desktop]
+Version=1.0
+Name=ImageMagick (display Q16)
+Comment=Display and edit image files
+Exec=/usr/lib/x86_64-linux-gnu/ImageMagick-6.8.9/bin-Q16/display %f
+Terminal=false
+Icon=display-im6.q16
+Type=Application
+Categories=Graphics;
+Keywords=Image;Slideshow;View;Transform;Enhance;F/X;Special Effects
+MimeType=image/avs;image/bie;image/x-ms-bmp;image/cmyk;image/dcx;image/eps;image/fax;image/fits;image/gif;image/gray;image/jpeg;image/pjpeg;image/miff;image/mono;image/mtv;image/x-portable-bitmap;image/pcd;image/pcx;image/pdf;image/x-portable-graymap;image/pict;image/png;image/x-portable-anymap;image/x-portable-pixmap;image/ps;image/rad;image/x-rgb;image/rgba;image/rla;image/rle;image/sgi;image/sun-raster;image/targa;image/tiff;image/uyvy;image/vid;image/viff;image/x-xbitmap;image/x-xpixmap;image/x-xwindowdump;image/x-icon;image/yuv;
+
+[/usr/share/applications/docky.desktop]
+Name=Docky
+Type=Application
+Exec=docky
+Terminal=false
+Icon=docky
+Comment=The finest dock no money can buy.
+NoDisplay=false
+Categories=Utility;
+
+[/usr/share/applications/eog.desktop]
+Name=Image Viewer
+Comment=Browse and rotate images
+TryExec=eog
+Exec=eog %U
+Icon=eog
+StartupNotify=true
+Terminal=false
+Type=Application
+Categories=GNOME;GTK;Graphics;2DGraphics;RasterGraphics;Viewer;
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Product=EOG
+X-GNOME-Bugzilla-Component=general
+X-GNOME-Bugzilla-Version=3.18.2
+X-GNOME-DocPath=eog/eog.xml
+MimeType=image/bmp;image/gif;image/jpeg;image/jpg;image/pjpeg;image/png;image/tiff;image/x-bmp;image/x-gray;image/x-icb;image/x-ico;image/x-png;image/x-portable-anymap;image/x-portable-bitmap;image/x-portable-graymap;image/x-portable-pixmap;image/x-xbitmap;image/x-xpixmap;image/x-pcx;image/svg+xml;image/svg+xml-compressed;image/vnd.wap.wbmp;
+Keywords=Picture;Slideshow;Graphics;
+X-Ubuntu-Gettext-Domain=eog
+
+[/usr/share/applications/evince-previewer.desktop]
+Name=Print Preview
+Comment=Preview before printing
+TryExec=evince-previewer
+Exec=evince-previewer %U
+StartupNotify=true
+Terminal=false
+Type=Application
+Icon=document-print-preview
+NoDisplay=true
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Product=evince
+X-GNOME-Bugzilla-Component=BugBuddyBugs
+X-GNOME-Bugzilla-Version=3.18.2
+Categories=GNOME;GTK;Office;Viewer;Graphics;2DGraphics;VectorGraphics;
+MimeType=application/pdf;application/x-bzpdf;application/x-gzpdf;application/x-xzpdf;application/x-ext-pdf;application/postscript;application/x-bzpostscript;application/x-gzpostscript;image/x-eps;image/x-bzeps;image/x-gzeps;application/x-ext-ps;application/x-ext-eps;application/x-dvi;application/x-bzdvi;application/x-gzdvi;application/x-ext-dvi;image/vnd.djvu;application/x-ext-djv;application/x-ext-djvu;image/tiff;application/x-cbr;application/x-cbz;application/x-cb7;application/x-cbt;application/x-ext-cbr;application/x-ext-cbz;application/x-ext-cb7;application/x-ext-cbt;application/oxps;application/vnd.ms-xpsdocument;
+X-Ubuntu-Gettext-Domain=evince
+
+[/usr/share/applications/evince.desktop]
+Name=Document Viewer
+Comment=View multi-page documents
+Keywords=pdf;ps;postscript;dvi;xps;djvu;tiff;document;presentation;
+TryExec=evince
+Exec=evince %U
+StartupNotify=true
+Terminal=false
+Type=Application
+Icon=evince
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Product=evince
+X-GNOME-Bugzilla-Component=BugBuddyBugs
+X-GNOME-Bugzilla-Version=3.18.2
+Categories=GNOME;GTK;Office;Viewer;Graphics;2DGraphics;VectorGraphics;
+MimeType=application/pdf;application/x-bzpdf;application/x-gzpdf;application/x-xzpdf;application/x-ext-pdf;application/postscript;application/x-bzpostscript;application/x-gzpostscript;image/x-eps;image/x-bzeps;image/x-gzeps;application/x-ext-ps;application/x-ext-eps;application/x-dvi;application/x-bzdvi;application/x-gzdvi;application/x-ext-dvi;image/vnd.djvu;application/x-ext-djv;application/x-ext-djvu;image/tiff;application/x-cbr;application/x-cbz;application/x-cb7;application/x-cbt;application/x-ext-cbr;application/x-ext-cbz;application/x-ext-cb7;application/x-ext-cbt;application/oxps;application/vnd.ms-xpsdocument;
+X-Ubuntu-Gettext-Domain=evince
+
+[/usr/share/applications/evolution-data-server-uoa.desktop]
+Version=1.0
+Name=Evolution Data Server
+Comment=Required to have EDS appear in UOA
+Type=Application
+NoDisplay=true
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Product=evolution-data-server
+X-GNOME-Bugzilla-Component=General
+X-GNOME-Bugzilla-Version=3.18.5
+X-Ubuntu-Gettext-Domain=evolution-data-server-3.18
+
+[/usr/share/applications/file-roller.desktop]
+Name=Archive Manager
+Comment=Create and modify an archive
+Keywords=zip;tar;extract;unpack;
+TryExec=file-roller
+Exec=file-roller %U
+StartupNotify=true
+Terminal=false
+Type=Application
+Icon=file-roller
+Categories=GTK;GNOME;Utility;Archiving;Compression;X-GNOME-Utilities;
+NotShowIn=KDE;
+X-GNOME-DocPath=file-roller/file-roller.xml
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Product=file-roller
+X-GNOME-Bugzilla-Component=general
+X-GNOME-Bugzilla-Version=3.16.5
+X-GNOME-UsesNotifications=true
+X-Ubuntu-Gettext-Domain=file-roller
+X-AppStream-Ignore=true
+
+[/usr/share/applications/firefox.desktop]
+Version=1.0
+Name=Firefox Web Browser
+Comment=Browse the World Wide Web
+GenericName=Web Browser
+Keywords=Internet;WWW;Browser;Web;Explorer
+Exec=firefox %u
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=firefox
+Categories=GNOME;GTK;Network;WebBrowser;
+MimeType=text/html;text/xml;application/xhtml+xml;application/xml;application/rss+xml;application/rdf+xml;image/gif;image/jpeg;image/png;x-scheme-handler/http;x-scheme-handler/https;x-scheme-handler/ftp;x-scheme-handler/chrome;video/webm;application/x-xpinstall;
+StartupNotify=true
+Actions=NewWindow;NewPrivateWindow;
+
+[/usr/share/applications/gcr-prompter.desktop]
+Name=Access Prompt
+Comment=Unlock access to passwords and other secrets
+Icon=security-medium
+Exec=/usr/lib/gcr/gcr-prompter
+Terminal=false
+Type=Application
+NoDisplay=true
+X-Ubuntu-Gettext-Domain=gcr
+
+[/usr/share/applications/gcr-viewer.desktop]
+Name=View file
+MimeType=application/pkcs12;application/pkcs12+pem;application/pkcs7-mime;application/pkcs7-mime+pem;application/pkcs8;application/pkcs8+pem;application/pkix-cert;application/pkix-cert+pem;application/pkix-crl;application/pkix-crl+pem;application/x-pem-file;application/x-pem-key;application/x-pkcs12;application/x-pkcs7-certificates;application/x-x509-ca-cert;application/x-x509-user-cert;application/pkcs10;application/pkcs10+pem;application/x-spkac;application/x-spkac+base64;
+Exec=/usr/bin/gcr-viewer
+Type=Application
+Terminal=false
+NoDisplay=true
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Product=gnome-keyring
+X-GNOME-Bugzilla-Component=gcrX-Ubuntu-Gettext-Domain=gcr
+
+[/usr/share/applications/gedit.desktop]
+Name=gedit
+GenericName=Text Editor
+Comment=Edit text files
+Exec=gedit %U
+Terminal=false
+Type=Application
+StartupNotify=true
+Icon=accessories-text-editor
+Categories=GNOME;GTK;Utility;TextEditor;
+X-GNOME-DocPath=gedit/gedit.xml
+X-GNOME-FullName=Text Editor
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Product=gedit
+X-GNOME-Bugzilla-Component=general
+X-GNOME-Bugzilla-Version=3.18.3
+X-GNOME-Bugzilla-ExtraInfoScript=/usr/share/gedit/gedit-bugreport
+Actions=new-window;new-document;
+Keywords=Text;Editor;Plaintext;Write;
+X-Ubuntu-Gettext-Domain=gedit
+X-AppStream-Ignore=true
+
+[/usr/share/applications/gkbd-keyboard-display.desktop]
+Name=Keyboard Layout
+Comment=Preview keyboard layouts
+Icon=preferences-desktop-keyboard
+Exec=gkbd-keyboard-display
+Terminal=false
+Type=Application
+StartupNotify=true
+NoDisplay=true
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Product=libgnomekbd
+X-GNOME-Bugzilla-Component=Drawing
+X-GNOME-Bugzilla-Version=3.6.0
+Categories=GNOME;GTK;Core;System;
+OnlyShowIn=GNOME;
+X-Ubuntu-Gettext-Domain=libgnomekbd
+
+[/usr/share/applications/gnome-calculator.desktop]
+Name=Calculator
+Comment=Perform arithmetic, scientific or financial calculations
+Keywords=calculation;arithmetic;scientific;financial;
+Exec=gnome-calculator
+Icon=accessories-calculator
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=GNOME;GTK;Utility;Calculator;
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Product=gnome-calculator
+X-GNOME-Bugzilla-Component=general
+X-Ubuntu-Gettext-Domain=gnome-calculator
+
+[/usr/share/applications/gnome-disk-image-mounter.desktop]
+Name=Disk Image Mounter
+Comment=Mount Disk Images
+Exec=gnome-disk-image-mounter %U
+Icon=drive-removable-media
+MimeType=application/x-cd-image;application/x-raw-disk-image;
+Terminal=false
+StartupNotify=false
+Type=Application
+NoDisplay=true
+X-Ubuntu-Gettext-Domain=gnome-disk-utility
+
+[/usr/share/applications/gnome-disk-image-writer.desktop]
+Name=Disk Image Writer
+Comment=Write Disk Images to Devices
+Exec=gnome-disks --restore-disk-image %U
+Icon=drive-removable-media
+MimeType=application/x-cd-image;application/x-raw-disk-image;application/x-raw-disk-image-xz-compressed;
+Terminal=false
+StartupNotify=false
+Type=Application
+NoDisplay=true
+X-Ubuntu-Gettext-Domain=gnome-disk-utility
+
+[/usr/share/applications/gnome-mahjongg.desktop]
+Name=Mahjongg
+Comment=Disassemble a pile of tiles by removing matching pairs
+Keywords=game;strategy;puzzle;board;
+Exec=gnome-mahjongg
+Icon=gnome-mahjongg
+Terminal=false
+Type=Application
+Categories=GNOME;GTK;Game;BoardGame;
+StartupNotify=true
+X-Ubuntu-Gettext-Domain=gnome-mahjongg
+
+[/usr/share/applications/gnome-mines.desktop]
+Name=Mines
+Comment=Clear hidden mines from a minefield
+Exec=gnome-mines
+Icon=gnome-mines
+Terminal=false
+Type=Application
+Categories=GNOME;GTK;Game;LogicGame;
+Keywords=minesweeper;
+StartupNotify=true
+Actions=Small;Medium;Big;
+X-Ubuntu-Gettext-Domain=gnome-mines
+
+[/usr/share/applications/gnome-power-statistics.desktop]
+Name=Power Statistics
+Comment=Observe power management
+Keywords=battery;consumption;charge;
+Icon=gnome-power-statistics
+Exec=gnome-power-statistics
+Terminal=false
+Type=Application
+Categories=GNOME;GTK;System;Monitor;
+OnlyShowIn=GNOME;Unity;
+StartupNotify=true
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Product=gnome-power-manager
+X-GNOME-Bugzilla-Component=gnome-power-statistics
+X-GNOME-Bugzilla-Version=3.18.0
+X-Desktop-File-Install-Version=0.10
+X-Ubuntu-Gettext-Domain=gnome-power-manager
+
+[/usr/share/applications/gnome-session-properties.desktop]
+Name=Startup Applications
+Comment=Choose what applications to start when you log in
+Exec=gnome-session-properties
+Icon=session-properties
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=GTK;GNOME;Settings;X-GNOME-PersonalSettings;
+OnlyShowIn=GNOME;Unity;
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Product=gnome-session
+X-GNOME-Bugzilla-Component=gnome-session-properties
+X-GNOME-Bugzilla-Version=3.18.1.2
+X-Ubuntu-Gettext-Domain=gnome-session-3.0
+
+[/usr/share/applications/gnome-software-local-file.desktop]
+Name=Software Install
+Comment=Install selected software on the system
+Categories=System;
+Exec=gnome-software --local-filename=%f
+Terminal=false
+Type=Application
+Icon=system-software-install
+StartupNotify=true
+NoDisplay=true
+MimeType=application/x-rpm;application/x-redhat-package-manager;application/x-deb;application/x-app-package;application/vnd.ms-cab-compressed;application/vnd.xdgapp;x-scheme-handler/apt;application/vnd.snap;
+X-Ubuntu-Gettext-Domain=gnome-software
+
+[/usr/share/applications/gnome-sudoku.desktop]
+Name=Sudoku
+Comment=Test your logic skills in this number grid puzzle
+Keywords=magic;square;
+Exec=gnome-sudoku
+Icon=gnome-sudoku
+Terminal=false
+Type=Application
+Categories=GNOME;GTK;Game;LogicGame;
+StartupNotify=true
+Version=1.0
+X-Ubuntu-Gettext-Domain=gnome-sudoku
+
+[/usr/share/applications/gnome-system-log.desktop]
+Name=System Log
+Comment=View or monitor system log files
+Keywords=logs;debug;error;
+Exec=gnome-system-log-pkexec
+Icon=logview
+Terminal=false
+Type=Application
+StartupNotify=false
+Categories=GTK;GNOME;System;Monitor;
+NotShowIn=KDE;
+X-GNOME-DocPath=gnome-system-log/gnome-system-log.xml
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Product=gnome-utils
+X-GNOME-Bugzilla-Component=logview
+X-GNOME-Bugzilla-Version=3.9.90
+X-Ubuntu-Gettext-Domain=gnome-system-log
+
+[/usr/share/applications/gnome-system-monitor-kde.desktop]
+Name=GNOME System Monitor
+Comment=View current processes and monitor system state
+TryExec=gnome-system-monitor
+Exec=gnome-system-monitor
+Icon=utilities-system-monitor
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=GNOME;GTK;System;Monitor;
+OnlyShowIn=KDE;
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Product=system-monitor
+X-GNOME-Bugzilla-Component=general
+X-GNOME-Bugzilla-Version=3.18.2
+Keywords=Monitor;System;Process;CPU;Memory;Network;History;Usage;
+X-Ubuntu-Gettext-Domain=gnome-system-monitor
+
+[/usr/share/applications/gnome-system-monitor.desktop]
+Name=System Monitor
+Comment=View current processes and monitor system state
+TryExec=gnome-system-monitor
+Exec=gnome-system-monitor
+Icon=utilities-system-monitor
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=GNOME;GTK;System;Monitor;
+NotShowIn=KDE;
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Product=system-monitor
+X-GNOME-Bugzilla-Component=general
+X-GNOME-Bugzilla-Version=3.18.2
+Keywords=Monitor;System;Process;CPU;Memory;Network;History;Usage;Performance;Task;Manager;
+X-Ubuntu-Gettext-Domain=gnome-system-monitor
+
+[/usr/share/applications/gnome-terminal.desktop]
+Name=Terminal
+Comment=Use the command line
+Keywords=shell;prompt;command;commandline;cmd;
+TryExec=gnome-terminal
+Exec=gnome-terminal
+Icon=utilities-terminal
+Type=Application
+X-GNOME-DocPath=gnome-terminal/index.html
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Product=gnome-terminal
+X-GNOME-Bugzilla-Component=BugBuddyBugs
+X-GNOME-Bugzilla-Version=3.18.3
+Categories=GNOME;GTK;System;TerminalEmulator;
+StartupNotify=true
+X-GNOME-SingleWindow=false
+OnlyShowIn=GNOME;Unity;
+Actions=New
+X-Ubuntu-Gettext-Domain=gnome-terminal
+
+[/usr/share/applications/gnome-user-share-properties.desktop]
+Name=Personal File Sharing
+Comment=Preferences for sharing of files
+Exec=gnome-file-share-properties
+Icon=folder-remote
+StartupNotify=true
+Terminal=false
+Type=Application
+Categories=GNOME;Settings;X-GNOME-NetworkSettings;
+OnlyShowIn=Unity;
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Product=gnome-user-share
+X-GNOME-Bugzilla-Component=general
+X-GNOME-UsesNotifications=true
+X-Ubuntu-Gettext-Domain=gnome-user-share
+
+[/usr/share/applications/gnome-user-share-webdav.desktop]
+Name=Personal File Sharing
+Comment=Launch Personal File Sharing if enabled
+Keywords=share;files;bluetooth;obex;http;network;copy;send;
+AutostartCondition=GSETTINGS org.gnome.desktop.file-sharing enabled
+Icon=folder-remote
+Exec=/usr/lib/gnome-user-share/gnome-user-share-webdav
+Terminal=false
+Type=Application
+OnlyShowIn=GNOME;Unity;
+NoDisplay=true
+X-GNOME-Autostart-Delay=15
+X-Ubuntu-Gettext-Domain=gnome-user-share
+
+[/usr/share/applications/gucharmap.desktop]
+Name=Character Map
+Comment=Insert special characters into documents
+Keywords=font;unicode;
+Exec=gucharmap
+Icon=accessories-character-map
+Terminal=false
+Type=Application
+Categories=GNOME;GTK;Utility;
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Product=gucharmap
+X-GNOME-Bugzilla-Component=general
+X-GNOME-Bugzilla-Version=3.18.2
+StartupNotify=true
+X-Ubuntu-Gettext-Domain=gucharmap
+
+[/usr/share/applications/hplj1020.desktop]
+Name=Reactivate HP LaserJet 1018/1020 after reloading paper
+Comment=Click the button in this program when your printer ran out of paper and you have refilled the paper
+# zExec=usb_printerid /dev/usb/lp0
+Exec=/usr/share/foo2zjs/hplj10xx_gui.tcl
+Terminal=false
+Type=Application
+Icon=/usr/share/pixmaps/hplj1020_icon.png
+StartupNotify=true
+Categories=System;
+X-Desktop-File-Install-Version=0.10
+NoDisplay=true
+
+[/usr/share/applications/ibus-setup-table.desktop]
+Name=IBus Table Setup
+Comment=Set ibus-table preferences
+Exec=/usr/lib/ibus/ibus-setup-table
+Icon=/usr/share/ibus-table/icons/chinese.svg
+NoDisplay=true
+Type=Application
+StartupNotify=true
+
+[/usr/share/applications/ibus-setup.desktop]
+Name=IBus Preferences
+Comment=Set IBus Preferences
+Exec=ibus-setup
+Icon=ibus-setup
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Settings;
+Keywords=keyboard;input;
+NotShowIn=GNOME;Unity;
+X-Desktop-File-Install-Version=0.22
+
+[/usr/share/applications/im-config.desktop]
+Name=Input Method
+Comment=Set Keyboard Input Method
+Type=Application
+Keywords=keyboard;input
+Exec=im-config
+Terminal=false
+Icon=input-keyboard
+Categories=Settings
+OnlyShowIn=KDE;GNOME;
+
+[/usr/share/applications/language-selector.desktop]
+Name=Language Support
+Comment=Configure multiple and native language support on your system
+Exec=/usr/bin/gnome-language-selector
+Icon=preferences-desktop-locale
+Terminal=false
+Type=Application
+Categories=GNOME;GTK;Settings;DesktopSettings;X-GNOME-Settings-Panel;X-Unity-Settings-Panel;X-GNOME-PersonalSettings
+X-Ubuntu-Gettext-Domain=language-selector
+NotShowIn=KDE;
+X-GNOME-Settings-Panel=language
+X-Unity-Settings-Panel=language
+Keywords=Language;Input method;Region;Format;
+
+[/usr/share/applications/libreoffice-calc.desktop]
+Version=1.0
+Terminal=false
+Icon=libreoffice-calc
+Type=Application
+Categories=Office;Spreadsheet;X-Red-Hat-Base;X-MandrivaLinux-Office-Spreadsheets;
+Exec=libreoffice --calc %U
+MimeType=application/vnd.oasis.opendocument.spreadsheet;application/vnd.oasis.opendocument.spreadsheet-template;application/vnd.sun.xml.calc;application/vnd.sun.xml.calc.template;application/msexcel;application/vnd.ms-excel;application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;application/vnd.ms-excel.sheet.macroenabled.12;application/vnd.openxmlformats-officedocument.spreadsheetml.template;application/vnd.ms-excel.template.macroenabled.12;application/vnd.ms-excel.sheet.binary.macroenabled.12;text/csv;application/x-dbf;text/spreadsheet;application/csv;application/excel;application/tab-separated-values;application/vnd.lotus-1-2-3;application/vnd.oasis.opendocument.chart;application/vnd.oasis.opendocument.chart-template;application/x-dbase;application/x-dos_ms_excel;application/x-excel;application/x-msexcel;application/x-ms-excel;application/x-quattropro;application/x-123;text/comma-separated-values;text/tab-separated-values;text/x-comma-separated-values;text/x-csv;application/vnd.oasis.opendocument.spreadsheet-flat-xml;application/vnd.ms-works;application/clarisworks;application/x-iwork-numbers-sffnumbers;
+Name=LibreOffice Calc
+GenericName=Spreadsheet
+Comment=Perform calculations, analyze information and manage lists in spreadsheets by using Calc.
+StartupNotify=true
+X-GIO-NoFuse=true
+Keywords=Accounting;Stats;OpenDocument Spreadsheet;Chart;Microsoft Excel;Microsoft Works;OpenOffice Calc;ods;xls;xlsx;
+InitialPreference=5
+StartupWMClass=libreoffice-calc
+X-KDE-Protocols=file,http,ftp,webdav
+Actions=NewDocument;
+
+[/usr/share/applications/libreoffice-draw.desktop]
+Version=1.0
+Terminal=false
+Icon=libreoffice-draw
+Type=Application
+Categories=Office;FlowChart;Graphics;2DGraphics;VectorGraphics;X-Red-Hat-Base;X-MandrivaLinux-Office-Drawing;
+Exec=libreoffice --draw %U
+MimeType=application/vnd.oasis.opendocument.graphics;application/vnd.oasis.opendocument.graphics-flat-xml;application/vnd.oasis.opendocument.graphics-template;application/vnd.sun.xml.draw;application/vnd.sun.xml.draw.template;application/vnd.visio;application/x-wpg;application/vnd.corel-draw;application/vnd.ms-publisher;image/x-freehand;application/clarisworks;application/x-pagemaker;
+Name=LibreOffice Draw
+GenericName=Drawing Program
+Comment=Create and edit drawings, flow charts, and logos by using Draw.
+StartupNotify=true
+X-GIO-NoFuse=true
+Keywords=Vector;Schema;Diagram;Layout;OpenDocument Graphics;Microsoft Publisher;Corel Draw;cdr;odg;svg;
+InitialPreference=5
+StartupWMClass=libreoffice-draw
+X-KDE-Protocols=file,http,ftp,webdav
+Actions=NewDocument;
+
+[/usr/share/applications/libreoffice-impress.desktop]
+Version=1.0
+Terminal=false
+Icon=libreoffice-impress
+Type=Application
+Categories=Office;Presentation;X-Red-Hat-Base;X-MandrivaLinux-Office-Presentations;
+Exec=libreoffice --impress %U
+MimeType=application/vnd.oasis.opendocument.presentation;application/vnd.oasis.opendocument.presentation-template;application/vnd.sun.xml.impress;application/vnd.sun.xml.impress.template;application/mspowerpoint;application/vnd.ms-powerpoint;application/vnd.openxmlformats-officedocument.presentationml.presentation;application/vnd.ms-powerpoint.presentation.macroenabled.12;application/vnd.openxmlformats-officedocument.presentationml.template;application/vnd.ms-powerpoint.template.macroenabled.12;application/vnd.openxmlformats-officedocument.presentationml.slide;application/vnd.openxmlformats-officedocument.presentationml.slideshow;application/vnd.ms-powerpoint.slideshow.macroEnabled.12;application/vnd.oasis.opendocument.presentation-flat-xml;application/x-iwork-keynote-sffkey;
+Name=LibreOffice Impress
+GenericName=Presentation
+Comment=Create and edit presentations for slideshows, meeting and Web pages by using Impress.
+StartupNotify=true
+X-GIO-NoFuse=true
+Keywords=Slideshow;Slides;OpenDocument Presentation;Microsoft PowerPoint;Microsoft Works;OpenOffice Impress;odp;ppt;pptx;
+InitialPreference=5
+StartupWMClass=libreoffice-impress
+X-KDE-Protocols=file,http,ftp,webdav
+Actions=NewDocument;
+
+[/usr/share/applications/libreoffice-math.desktop]
+Version=1.0
+Terminal=false
+NoDisplay=false
+Icon=libreoffice-math
+Type=Application
+Categories=Office;Spreadsheet;Education;Science;Math;X-Red-Hat-Base;X-MandrivaLinux-Office-Other;
+Exec=libreoffice --math %U
+MimeType=application/vnd.oasis.opendocument.formula;application/vnd.sun.xml.math;application/vnd.oasis.opendocument.formula-template;text/mathml;application/mathml+xml;
+Name=LibreOffice Math
+GenericName=Formula Editor
+Comment=Create and edit scientific formulas and equations by using Math.
+StartupNotify=true
+X-GIO-NoFuse=true
+Keywords=Equation;OpenDocument Formula;Formula;odf;MathML;
+InitialPreference=5
+StartupWMClass=libreoffice-math
+X-KDE-Protocols=file,http,ftp,webdav
+Actions=NewDocument;
+
+[/usr/share/applications/libreoffice-startcenter.desktop]
+Version=1.0
+Terminal=false
+NoDisplay=false
+Icon=libreoffice-startcenter
+Type=Application
+Categories=Office;X-Red-Hat-Base;X-SuSE-Core-Office;X-MandrivaLinux-Office-Other;
+Exec=libreoffice %U
+MimeType=application/vnd.openofficeorg.extension;x-scheme-handler/vnd.libreoffice.cmis;
+Name=LibreOffice
+GenericName=Office
+Comment=The office productivity suite compatible to the open and standardized ODF document format. Supported by The Document Foundation.
+StartupNotify=true
+X-GIO-NoFuse=true
+StartupWMClass=libreoffice-startcenter
+X-KDE-Protocols=file,http,ftp,webdav
+Actions=Writer;Calc;Impress;Draw;Base;Math;
+
+[/usr/share/applications/libreoffice-writer.desktop]
+Version=1.0
+Terminal=false
+Icon=libreoffice-writer
+Type=Application
+Categories=Office;WordProcessor;X-Red-Hat-Base;X-MandrivaLinux-Office-Wordprocessors;
+Exec=libreoffice --writer %U
+MimeType=application/vnd.oasis.opendocument.text;application/vnd.oasis.opendocument.text-template;application/vnd.oasis.opendocument.text-web;application/vnd.oasis.opendocument.text-master;application/vnd.oasis.opendocument.text-master-template;application/vnd.sun.xml.writer;application/vnd.sun.xml.writer.template;application/vnd.sun.xml.writer.global;application/msword;application/vnd.ms-word;application/x-doc;application/x-hwp;application/rtf;text/rtf;application/vnd.wordperfect;application/wordperfect;application/vnd.lotus-wordpro;application/vnd.openxmlformats-officedocument.wordprocessingml.document;application/vnd.ms-word.document.macroenabled.12;application/vnd.openxmlformats-officedocument.wordprocessingml.template;application/vnd.ms-word.template.macroenabled.12;application/vnd.ms-works;application/vnd.stardivision.writer-global;application/x-extension-txt;application/x-t602;text/plain;application/vnd.oasis.opendocument.text-flat-xml;application/x-fictionbook+xml;application/macwriteii;application/x-aportisdoc;application/prs.plucker;application/vnd.palm;application/clarisworks;application/x-sony-bbeb;application/x-abiword;application/x-iwork-pages-sffpages;application/x-mswrite;
+Name=LibreOffice Writer
+GenericName=Word Processor
+Comment=Create and edit text and graphics in letters, reports, documents and Web pages by using Writer.
+StartupNotify=true
+X-GIO-NoFuse=true
+Keywords=Text;Letter;Fax;Document;OpenDocument Text;Microsoft Word;Microsoft Works;Lotus WordPro;OpenOffice Writer;CV;odt;doc;docx;rtf;
+InitialPreference=5
+StartupWMClass=libreoffice-writer
+X-KDE-Protocols=file,http,ftp,webdav
+Actions=NewDocument;
+
+[/usr/share/applications/libreoffice-xsltfilter.desktop]
+Version=1.0
+Terminal=false
+Type=Application
+Exec=libreoffice %U
+MimeType=application/vnd.oasis.opendocument.text-flat-xml;application/vnd.oasis.opendocument.spreadsheet-flat-xml;application/vnd.oasis.opendocument.graphics-flat-xml;application/vnd.oasis.opendocument.presentation-flat-xml;
+Name=LibreOffice XSLT based filters
+GenericName=XSLT based filters
+NoDisplay=true
+StartupNotify=true
+X-GIO-NoFuse=true
+X-KDE-Protocols=file,http,ftp,webdav
+
+[/usr/share/applications/logout.desktop]
+Name=Logout
+Comment=Log out of your account.
+GenericName=Log Out
+Exec=gnome-session-quit --logout
+Terminal=false
+Type=Application
+Categories=Utility
+Icon=/usr/share/unity/icons/logout_highlight.png
+NotShowIn=GNOME-Flashback;
+X-AppStream-Ignore=true
+
+[/usr/share/applications/mono-runtime-common.desktop]
+Name=Mono Runtime
+Exec=mono
+Terminal=false
+Type=Application
+Icon=mono-runtime-common
+MimeType=application/x-ms-dos-executable;
+NoDisplay=true
+
+[/usr/share/applications/mono-runtime-terminal.desktop]
+Name=Mono Runtime (Terminal)
+Exec=mono
+Terminal=true
+Type=Application
+Icon=mono-runtime-common
+MimeType=application/x-ms-dos-executable;
+NoDisplay=true
+
+[/usr/share/applications/mount-archive.desktop]
+Name=Archive Mounter
+Exec=/usr/lib/gvfs/gvfsd-archive file=%u
+MimeType=application/x-cd-image;application/x-bzip-compressed-tar;application/x-compressed-tar;application/x-tar;application/x-cpio;application/zip;
+Terminal=false
+StartupNotify=false
+Type=Application
+NoDisplay=true
+X-Ubuntu-Gettext-Domain=nautilus
+
+[/usr/share/applications/nautilus-autorun-software.desktop]
+Name=Run Software
+TryExec=nautilus-autorun-software
+Exec=nautilus-autorun-software %u
+Icon=application-x-executable
+NoDisplay=true
+Terminal=false
+StartupNotify=true
+Type=Application
+MimeType=x-content/unix-software;
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Product=nautilus
+X-GNOME-Bugzilla-Component=general
+X-GNOME-Bugzilla-Version=3.14.3
+X-Ubuntu-Gettext-Domain=nautilus
+
+[/usr/share/applications/nautilus-classic.desktop]
+Type=Application
+Name=Desktop Icons
+Comment=Classic session desktop file for desktop icons
+Exec=nautilus --no-default-window --force-desktop
+OnlyShowIn=GNOME;
+NoDisplay=true
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Product=nautilus
+X-GNOME-Bugzilla-Component=general
+X-GNOME-Bugzilla-Version=3.14.3
+X-GNOME-Autostart-Phase=Desktop
+X-GNOME-Autostart-Notify=true
+X-GNOME-AutoRestart=true
+X-GNOME-Provides=filemanager
+X-Ubuntu-Gettext-Domain=nautilus
+
+[/usr/share/applications/nautilus-connect-server.desktop]
+Name=Connect to Server
+TryExec=nautilus-connect-server
+Exec=nautilus-connect-server
+Icon=applications-internet
+NoDisplay=true
+Terminal=false
+StartupNotify=true
+Type=Application
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Product=nautilus
+X-GNOME-Bugzilla-Component=general
+X-GNOME-Bugzilla-Version=3.14.3
+X-Ubuntu-Gettext-Domain=nautilus
+
+[/usr/share/applications/nautilus-folder-handler.desktop]
+Name=Files
+Comment=Access and organize files
+Exec=nautilus --new-window %U
+Icon=system-file-manager
+Terminal=false
+NoDisplay=true
+Type=Application
+StartupNotify=true
+OnlyShowIn=GNOME;Unity;
+Categories=GNOME;GTK;Utility;Core;
+MimeType=inode/directory;application/x-gnome-saved-search;
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Product=nautilus
+X-GNOME-Bugzilla-Component=general
+X-GNOME-Bugzilla-Version=3.2.1
+X-Ubuntu-Gettext-Domain=nautilus
+
+[/usr/share/applications/nautilus-home.desktop]
+Name=Home Folder
+Comment=Open your personal folder
+Exec=nautilus --new-window %U
+Icon=folder
+Terminal=false
+StartupNotify=true
+Type=Application
+OnlyShowIn=GNOME;Unity;
+Categories=GNOME;GTK;Core;
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Product=nautilus
+X-GNOME-Bugzilla-Component=general
+X-GNOME-Bugzilla-Version=3.0.0
+X-Ubuntu-Gettext-Domain=nautilus
+Actions=Window;
+NoDisplay=true
+
+[/usr/share/applications/nautilus.desktop]
+NotShowIn=Unity;
+Name=Files
+Comment=Access and organize files
+Keywords=folder;manager;explore;disk;filesystem;
+Exec=nautilus --new-window %U
+Icon=system-file-manager
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=GNOME;GTK;Utility;Core;FileManager;
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Product=nautilus
+X-GNOME-Bugzilla-Component=general
+X-GNOME-Bugzilla-Version=3.14.3
+X-GNOME-UsesNotifications=true
+Actions=Window;
+X-Unity-IconBackgroundColor=#af4853
+X-Ubuntu-Gettext-Domain=nautilus
+X-AppStream-Ignore=true
+
+[/usr/share/applications/nm-applet.desktop]
+Name=Network
+Comment=Manage your network connections
+Icon=nm-device-wireless
+Exec=nm-applet
+Terminal=false
+Type=Application
+NoDisplay=true
+NotShowIn=KDE;GNOME;
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Product=NetworkManager
+X-GNOME-Bugzilla-Component=nm-applet
+X-GNOME-UsesNotifications=true
+X-Ubuntu-Gettext-Domain=nm-applet
+
+[/usr/share/applications/nm-connection-editor.desktop]
+Name=Network Connections
+Comment=Manage and change your network connection settings
+Icon=preferences-system-network
+Exec=nm-connection-editor
+Terminal=false
+StartupNotify=true
+Type=Application
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Product=NetworkManager
+X-GNOME-Bugzilla-Component=nm-connection-editor
+Categories=GNOME;GTK;Settings;X-GNOME-NetworkSettings;
+NotShowIn=KDE;GNOME;
+X-Ubuntu-Gettext-Domain=nm-applet
+
+[/usr/share/applications/onboard-settings.desktop]
+Name=Onboard Settings
+GenericName=Onboard onscreen keyboard settings
+Comment=Change Onboard settings
+Exec=onboard-settings
+Terminal=false
+Type=Application
+Categories=Settings;Accessibility;
+#NotShowIn=GNOME;
+NoDisplay=false
+MimeType=application/x-onboardsettings;
+Icon=onboard
+X-Ubuntu-Gettext-Domain=onboard
+
+[/usr/share/applications/onboard.desktop]
+Name=Onboard
+GenericName=Onboard onscreen keyboard
+Comment=Flexible onscreen keyboard for GNOME
+Exec=onboard
+Terminal=false
+Type=Application
+Categories=Utility;Accessibility;
+#NotShowIn=GNOME;
+NoDisplay=false
+MimeType=application/x-onboard;
+Icon=onboard
+X-Ubuntu-Gettext-Domain=onboard
+
+[/usr/share/applications/orca.desktop]
+Name=Screen Reader
+GenericName=Screen Reader
+X-GNOME-FullName=Orca Screen Reader
+Comment=Provide access to graphical desktop environments via synthesized speech and/or refreshable braille
+Keywords=screen reader;speech;braille;
+Exec=orca --replace
+Icon=orca
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=GTK;GNOME;Utility;Accessibility;
+NotShowIn=Unity;
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Product=orca
+X-GNOME-Bugzilla-Component=general
+X-Ubuntu-Gettext-Domain=orca
+
+[/usr/share/applications/org.gnome.Calendar.desktop]
+Name=Calendar
+Comment=Access, and manage calendar
+Exec=gnome-calendar
+Icon=org.gnome.Calendar
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=GNOME;GTK;Office;Calendar;Core;
+Keywords=Calendar;Event;Reminder;
+MimeType=text/calendar;
+DBusActivatable=true
+X-Ubuntu-Gettext-Domain=gnome-calendar
+
+[/usr/share/applications/org.gnome.Cheese.desktop]
+Name=Cheese
+GenericName=Webcam Booth
+X-GNOME-FullName=Cheese Webcam Booth
+Comment=Take photos and videos with your webcam, with fun graphical effects
+Keywords=photo;video;webcam;
+Exec=cheese
+Terminal=false
+Type=Application
+StartupNotify=true
+Icon=cheese
+Categories=GNOME;AudioVideo;Video;Recorder;
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Product=cheese
+X-GNOME-Bugzilla-Component=general
+X-GNOME-Bugzilla-Version=3.18.1
+DBusActivatable=true
+X-Ubuntu-Gettext-Domain=cheese
+NoDisplay=true
+
+[/usr/share/applications/org.gnome.DiskUtility.desktop]
+Name=Disks
+Comment=Manage Drives and Media
+Keywords=disk;drive;volume;harddisk;hdd;disc;cdrom;dvd;partition;iso;image;backup;restore;benchmark;raid;luks;encryption;S.M.A.R.T.;smart;
+Exec=gnome-disks
+Icon=gnome-disks
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=GNOME;GTK;Utility;HardwareSettings;X-GNOME-Utilities;Settings;HardwareSettings;
+DBusActivatable=true
+X-Ubuntu-Gettext-Domain=gnome-disk-utility
+
+[/usr/share/applications/org.gnome.FileRoller.desktop]
+Name=Archive Manager
+Comment=Create and modify an archive
+Keywords=zip;tar;extract;unpack;
+TryExec=file-roller
+Exec=file-roller %U
+StartupNotify=true
+Terminal=false
+Type=Application
+Icon=file-roller
+Categories=GTK;GNOME;Utility;Archiving;Compression;X-GNOME-Utilities;
+NotShowIn=KDE;
+MimeType=application/x-7z-compressed;application/x-7z-compressed-tar;application/x-ace;application/x-alz;application/x-ar;application/x-arj;application/x-bzip;application/x-bzip-compressed-tar;application/x-bzip1;application/x-bzip1-compressed-tar;application/x-cabinet;application/x-cbr;application/x-cbz;application/x-cd-image;application/x-compress;application/x-compressed-tar;application/x-cpio;application/x-deb;application/x-ear;application/x-ms-dos-executable;application/x-gtar;application/x-gzip;application/x-gzpostscript;application/x-java-archive;application/x-lha;application/x-lhz;application/x-lrzip;application/x-lrzip-compressed-tar;application/x-lzip;application/x-lzip-compressed-tar;application/x-lzma;application/x-lzma-compressed-tar;application/x-lzop;application/x-lzop-compressed-tar;application/x-ms-wim;application/x-rar;application/x-rar-compressed;application/x-rpm;application/x-rzip;application/x-rzip-compressed-tar;application/x-tar;application/x-tarz;application/x-stuffit;application/x-war;application/x-xz;application/x-xz-compressed-tar;application/x-zip;application/x-zip-compressed;application/x-zoo;application/zip;application/x-archive;application/vnd.ms-cab-compressed;application/vnd.squashfs;application/vnd.snap;
+X-GNOME-DocPath=file-roller/file-roller.xml
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Product=file-roller
+X-GNOME-Bugzilla-Component=general
+X-GNOME-Bugzilla-Version=3.16.5
+X-GNOME-UsesNotifications=true
+X-Ubuntu-Gettext-Domain=file-roller
+NoDisplay=true
+
+[/usr/share/applications/org.gnome.Nautilus.desktop]
+Name=Files
+Comment=Access and organize files
+Keywords=folder;manager;explore;disk;filesystem;
+Exec=nautilus --new-window %U
+Icon=system-file-manager
+Terminal=false
+Type=Application
+DBusActivatable=true
+StartupNotify=true
+Categories=GNOME;GTK;Utility;Core;FileManager;
+MimeType=inode/directory;application/x-gnome-saved-search;
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Product=nautilus
+X-GNOME-Bugzilla-Component=general
+X-GNOME-Bugzilla-Version=3.14.3
+X-GNOME-UsesNotifications=true
+Actions=Window;
+X-Unity-IconBackgroundColor=#af4853
+X-Ubuntu-Gettext-Domain=nautilus
+OnlyShowIn=Unity;
+
+[/usr/share/applications/org.gnome.Screenshot.desktop]
+Name=Screenshot
+Comment=Save images of your screen or individual windows
+Keywords=snapshot;capture;print;screenshot;
+Exec=gnome-screenshot --interactive
+Terminal=false
+Type=Application
+Icon=applets-screenshooter
+StartupNotify=true
+Categories=GTK;GNOME;Utility;X-GNOME-Utilities;
+NotShowIn=KDE;
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Product=gnome-utils
+X-GNOME-Bugzilla-Component=screenshot
+Actions=screen-shot;window-shot;area-shot
+DBusActivatable=true
+X-Ubuntu-Gettext-Domain=gnome-screenshot
+
+[/usr/share/applications/org.gnome.Software.desktop]
+Name=Software
+Comment=Add, remove or update software on this computer
+Icon=org.gnome.Software
+Exec=gnome-software %U
+Terminal=false
+Type=Application
+Categories=GNOME;GTK;System;PackageManager;
+Keywords=Updates;Upgrade;Sources;Repositories;Preferences;Install;Uninstall;Program;Software;App;Store;
+StartupNotify=true
+MimeType=x-scheme-handler/appstream;
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Product=gnome-software
+X-GNOME-Bugzilla-Component=gnome-software
+X-GNOME-UsesNotifications=true
+DBusActivatable=true
+X-Ubuntu-Gettext-Domain=gnome-software
+
+[/usr/share/applications/org.gnome.Totem.desktop]
+Name=Videos
+Comment=Play movies
+Keywords=Video;Movie;Film;Clip;Series;Player;DVD;TV;Disc;
+Exec=totem %U
+Icon=totem
+DBusActivatable=true
+Terminal=false
+Type=Application
+Categories=GTK;GNOME;AudioVideo;Player;Video;
+MimeType=application/mxf;application/ogg;application/ram;application/sdp;application/smil;application/smil+xml;application/vnd.apple.mpegurl;application/vnd.ms-asf;application/vnd.ms-wpl;application/vnd.rn-realmedia;application/x-extension-m4a;application/x-extension-mp4;application/x-flac;application/x-flash-video;application/x-matroska;application/x-netshow-channel;application/x-ogg;application/x-quicktime-media-link;application/x-quicktimeplayer;application/x-shorten;application/x-smil;application/xspf+xml;audio/3gpp;audio/ac3;audio/AMR;audio/AMR-WB;audio/basic;audio/flac;audio/midi;audio/mp2;audio/mp4;audio/mpeg;audio/mpegurl;audio/ogg;audio/prs.sid;audio/vnd.rn-realaudio;audio/x-aiff;audio/x-ape;audio/x-flac;audio/x-gsm;audio/x-it;audio/x-m4a;audio/x-matroska;audio/x-mod;audio/x-mp3;audio/x-mpeg;audio/x-mpegurl;audio/x-ms-asf;audio/x-ms-asx;audio/x-ms-wax;audio/x-ms-wma;audio/x-musepack;audio/x-pn-aiff;audio/x-pn-au;audio/x-pn-realaudio;audio/x-pn-realaudio-plugin;audio/x-pn-wav;audio/x-pn-windows-acm;audio/x-realaudio;audio/x-real-audio;audio/x-s3m;audio/x-sbc;audio/x-scpls;audio/x-speex;audio/x-stm;audio/x-tta;audio/x-wav;audio/x-wavpack;audio/x-vorbis;audio/x-vorbis+ogg;audio/x-xm;image/vnd.rn-realpix;image/x-pict;misc/ultravox;text/google-video-pointer;text/x-google-video-pointer;video/3gp;video/3gpp;video/dv;video/divx;video/fli;video/flv;video/mp2t;video/mp4;video/mp4v-es;video/mpeg;video/msvideo;video/ogg;video/quicktime;video/vivo;video/vnd.divx;video/vnd.mpegurl;video/vnd.rn-realvideo;video/vnd.vivo;video/webm;video/x-anim;video/x-avi;video/x-flc;video/x-fli;video/x-flic;video/x-flv;video/x-m4v;video/x-matroska;video/x-mpeg;video/x-mpeg2;video/x-ms-asf;video/x-ms-asx;video/x-msvideo;video/x-ms-wm;video/x-ms-wmv;video/x-ms-wmx;video/x-ms-wvx;video/x-nsv;video/x-ogm+ogg;video/x-theora+ogg;video/x-totem-stream;x-content/video-dvd;x-content/video-vcd;x-content/video-svcd;x-scheme-handler/pnm;x-scheme-handler/mms;x-scheme-handler/net;x-scheme-handler/rtp;x-scheme-handler/rtmp;x-scheme-handler/rtsp;x-scheme-handler/mmsh;x-scheme-handler/uvox;x-scheme-handler/icy;x-scheme-handler/icyx;
+X-GNOME-DocPath=totem/totem.xml
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Product=totem
+X-GNOME-Bugzilla-Component=general
+X-GNOME-Bugzilla-Version=3.18.1
+X-GNOME-Bugzilla-OtherBinaries=totem-video-thumbnailer;totem-audio-preview;
+StartupNotify=true
+Actions=Play;Next;Previous;Mute;Fullscreen;
+X-Ubuntu-Gettext-Domain=totem
+NoDisplay=true
+
+[/usr/share/applications/org.gnome.baobab.desktop]
+Name=Disk Usage Analyzer
+Comment=Check folder sizes and available disk space
+Keywords=storage;space;cleanup;
+TryExec=baobab
+Exec=baobab
+Icon=baobab
+Terminal=false
+Type=Application
+StartupNotify=true
+MimeType=inode/directory;
+Categories=GTK;GNOME;System;Filesystem;X-GNOME-Utilities;
+NotShowIn=KDE;
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Product=gnome-utils
+X-GNOME-Bugzilla-Component=baobab
+X-GNOME-Bugzilla-Version=3.18.1
+DBusActivatable=true
+X-Ubuntu-Gettext-Domain=baobab
+
+[/usr/share/applications/org.gnome.font-viewer.desktop]
+Name=Font Viewer
+Comment=View fonts on your system
+Keywords=fonts;fontface;
+Icon=preferences-desktop-font
+Exec=gnome-font-viewer %u
+Terminal=false
+Type=Application
+DBusActivatable=true
+StartupNotify=true
+Categories=GTK;GNOME;Utility;X-GNOME-Utilities;
+MimeType=application/x-font-ttf;application/x-font-pcf;application/x-font-type1;application/x-font-otf;
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Product=gnome-font-viewer
+X-GNOME-Bugzilla-Component=general
+X-GNOME-Bugzilla-OtherBinaries=gnome-thumbnail-font
+X-GNOME-Bugzilla-Version=3.16.2
+X-Ubuntu-Gettext-Domain=gnome-font-viewer
+
+[/usr/share/applications/org.gnome.gedit.desktop]
+Name=gedit
+GenericName=Text Editor
+Comment=Edit text files
+Exec=gedit %U
+Terminal=false
+Type=Application
+StartupNotify=true
+MimeType=text/plain;
+Icon=accessories-text-editor
+Categories=GNOME;GTK;Utility;TextEditor;
+X-GNOME-DocPath=gedit/gedit.xml
+X-GNOME-FullName=Text Editor
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Product=gedit
+X-GNOME-Bugzilla-Component=general
+X-GNOME-Bugzilla-Version=3.18.3
+X-GNOME-Bugzilla-ExtraInfoScript=/usr/share/gedit/gedit-bugreport
+Actions=new-window;new-document;
+Keywords=Text;Editor;Plaintext;Write;
+DBusActivatable=true
+X-Ubuntu-Gettext-Domain=gedit
+NoDisplay=true
+
+[/usr/share/applications/python2.7.desktop]
+Name=Python (v2.7)
+Comment=Python Interpreter (v2.7)
+Exec=/usr/bin/python2.7
+Icon=/usr/share/pixmaps/python2.7.xpm
+Terminal=true
+Type=Application
+Categories=Development;
+StartupNotify=true
+NoDisplay=true
+
+[/usr/share/applications/python3.5.desktop]
+Name=Python (v3.5)
+Comment=Python Interpreter (v3.5)
+Exec=/usr/bin/python3.5
+Icon=/usr/share/pixmaps/python3.5.xpm
+Terminal=true
+Type=Application
+Categories=Development;
+StartupNotify=true
+NoDisplay=true
+
+[/usr/share/applications/reboot.desktop]
+Name=Reboot
+Comment=Reboot the computer
+GenericName=Reboot
+Exec=gnome-session-quit --reboot
+Terminal=false
+Type=Application
+Categories=Utility
+Icon=/usr/share/unity/icons/restart_highlight.png
+NotShowIn=GNOME-Flashback;
+X-AppStream-Ignore=true
+
+[/usr/share/applications/remmina.desktop]
+Version=1.0
+Name=Remmina
+GenericName=Remote Desktop Client
+X-GNOME-FullName=Remmina Remote Desktop Client
+Comment=Connect to remote desktops
+TryExec=remmina
+Exec=remmina
+Icon=remmina
+Terminal=false
+Type=Application
+Categories=GTK;GNOME;X-GNOME-NetworkSettings;Network;
+Actions=Profile;Tray;
+Keywords=remote desktop;rdp;vnc;nx,ssh;VNC;XDMCP;RDP;
+X-Ubuntu-Gettext-Domain=remmina
+
+[/usr/share/applications/rhythmbox-device.desktop]
+Name=Rhythmbox
+GenericName=Music Player
+X-GNOME-FullName=Rhythmbox Music Player
+Comment=Play and organize your music collection
+Exec=rhythmbox-client --select-source %U
+Terminal=false
+NoDisplay=true
+Type=Application
+Icon=rhythmbox
+X-GNOME-DocPath=rhythmbox/rhythmbox.xml
+Categories=GNOME;GTK;AudioVideo;
+MimeType=x-content/audio-player;x-content/audio-cdda;
+StartupNotify=false
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Product=rhythmbox
+X-GNOME-Bugzilla-Component=general
+X-GNOME-Bugzilla-OtherBinaries=rhythmbox;rhythmbox-metadata;
+X-GNOME-Bugzilla-Version=3.3
+X-Ubuntu-Gettext-Domain=rhythmbox
+
+[/usr/share/applications/rhythmbox.desktop]
+Name=Rhythmbox
+GenericName=Music Player
+X-GNOME-FullName=Rhythmbox Music Player
+Comment=Play and organize your music collection
+Keywords=Audio;Song;MP3;CD;Podcast;MTP;iPod;Playlist;Last.fm;UPnP;DLNA;Radio;
+Exec=rhythmbox %U
+Terminal=false
+Type=Application
+Icon=rhythmbox
+X-GNOME-DocPath=rhythmbox/rhythmbox.xml
+Categories=GNOME;GTK;AudioVideo;Audio;Player;
+MimeType=application/x-ogg;application/ogg;audio/x-vorbis+ogg;audio/vorbis;audio/x-vorbis;audio/x-scpls;audio/x-mp3;audio/x-mpeg;audio/mpeg;audio/x-mpegurl;audio/x-flac;audio/mp4;audio/x-it;audio/x-mod;audio/x-s3m;audio/x-stm;audio/x-xm;x-scheme-handler/itms;x-scheme-handler/itmss;
+StartupNotify=true
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Product=rhythmbox
+X-GNOME-Bugzilla-Component=general
+X-GNOME-Bugzilla-OtherBinaries=rhythmbox-client;rhythmbox-metadata;
+X-GNOME-Bugzilla-Version=3.3
+X-GNOME-UsesNotifications=true
+Actions=PlayPause;Next;Previous;StopQuit;
+X-Ubuntu-Gettext-Domain=rhythmbox
+
+[/usr/share/applications/seahorse.desktop]
+Name=Passwords and Keys
+Comment=Manage your passwords and encryption keys
+Keywords=keyring;encryption;security;sign;ssh;
+Exec=/usr/bin/seahorse
+Terminal=false
+Type=Application
+Icon=seahorse
+Categories=GNOME;GTK;Security;Utility;DesktopSettings;X-XFCE-SettingsDialog;
+StartupNotify=true
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Product=seahorse
+X-GNOME-Bugzilla-Component=general
+X-GNOME-Bugzilla-Version=3.18.0
+X-GNOME-DocPath=seahorse/seahorse.xml
+X-Ubuntu-Gettext-Domain=seahorse
+
+[/usr/share/applications/shotwell-viewer.desktop]
+Version=1.0
+Name=Shotwell Viewer
+GenericName=Photo Viewer
+Exec=shotwell %f
+Icon=shotwell
+Terminal=false
+NoDisplay=true
+Type=Application
+MimeType=image/jpeg;image/jpg;image/pjpeg;image/png;image/tiff;image/x-3fr;image/x-adobe-dng;image/x-arw;image/x-bay;image/x-bmp;image/x-canon-cr2;image/x-canon-crw;image/x-cap;image/x-cr2;image/x-crw;image/x-dcr;image/x-dcraw;image/x-dcs;image/x-dng;image/x-drf;image/x-eip;image/x-erf;image/x-fff;image/x-fuji-raf;image/x-iiq;image/x-k25;image/x-kdc;image/x-mef;image/x-minolta-mrw;image/x-mos;image/x-mrw;image/x-nef;image/x-nikon-nef;image/x-nrw;image/x-olympus-orf;image/x-orf;image/x-panasonic-raw;image/x-pef;image/x-pentax-pef;image/x-png;image/x-ptx;image/x-pxn;image/x-r3d;image/x-raf;image/x-raw;image/x-rw2;image/x-rwl;image/x-rwz;image/x-sigma-x3f;image/x-sony-arw;image/x-sony-sr2;image/x-sony-srf;image/x-sr2;image/x-srf;image/x-x3f;
+Categories=Graphics;Viewer;Photography;GNOME;GTK;
+X-GIO-NoFuse=true
+X-GNOME-Gettext-Domain=shotwell
+X-GNOME-FullName=Shotwell Photo Viewer
+
+[/usr/share/applications/shotwell.desktop]
+Version=1.0
+Name=Shotwell
+GenericName=Photo Manager
+Comment=Organize your photos
+Keywords=album;camera;cameras;crop;edit;enhance;export;gallery;image;images;import;organize;photo;photographs;photos;picture;pictures;photography;print;publish;rotate;share;tags;video;facebook;flickr;picasa;youtube;piwigo;
+Exec=shotwell %U
+Icon=shotwell
+Terminal=false
+Type=Application
+MimeType=x-content/image-dcf;
+Categories=Graphics;Photography;GNOME;GTK;
+X-GIO-NoFuse=true
+X-GNOME-Gettext-Domain=shotwell
+X-GNOME-FullName=Shotwell Photo Manager
+
+[/usr/share/applications/shutdown.desktop]
+Name=Shutdown
+Comment=Power off the computer
+GenericName=Shut Down
+Exec=gnome-session-quit --power-off
+Terminal=false
+Type=Application
+Categories=Utility
+Icon=/usr/share/unity/icons/shutdown_highlight.png
+NotShowIn=GNOME-Flashback;
+X-AppStream-Ignore=true
+
+[/usr/share/applications/signon-ui.desktop]
+Encoding=UTF-8
+Version=1.0
+Name=Account authentication
+Comment=Login to online accounts
+Exec=/usr/bin/signon-ui
+Type=Application
+Terminal=false
+NoDisplay=true
+X-Ubuntu-Gettext-Domain=signon-ui
+
+[/usr/share/applications/simple-scan.desktop]
+Name=Simple Scan
+GenericName=Document Scanner
+Comment=Scan Documents
+Keywords=scan;scanner;flatbed;adf;
+Exec=simple-scan
+Icon=scanner
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=GNOME;GTK;Graphics;Scanning;
+X-GNOME-Gettext-Domain=simple-scan
+
+[/usr/share/applications/software-properties-drivers.desktop]
+Keywords=Drivers;
+Exec=/usr/bin/software-properties-gtk --open-tab=4
+Icon=jockey
+Terminal=false
+Type=Application
+NotShownIn=GNOME;Unity;KDE;
+Categories=X-XFCE;GTK;Settings;HardwareSettings
+Name=Additional Drivers
+Comment=Configure third-party and proprietary drivers
+X-Ubuntu-Gettext-Domain=software-properties
+
+[/usr/share/applications/software-properties-gnome.desktop]
+Name=Software & Updates
+GenericName=Software & Updates
+Comment=Configure the sources for installable software and updates
+Keywords=Drivers;Repositories;Repository;PPA;
+Exec=software-properties-gtk
+Icon=software-properties
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+OnlyShowIn=GNOME;
+Categories=GNOME;GTK;Settings;X-GNOME-SystemSettings;
+MimeType=text/x-apt-sources-list;
+X-KDE-SubstituteUID=true
+X-Ubuntu-Gettext-Domain=software-properties
+
+[/usr/share/applications/software-properties-gtk.desktop]
+Name=Software & Updates
+GenericName=Software & Updates
+Comment=Configure the sources for installable software and updates
+Keywords=Drivers;Repositories;Repository;PPA;
+Exec=software-properties-gtk
+Icon=software-properties
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+NotShowIn=GNOME;
+Categories=GNOME;GTK;Settings;X-GNOME-SystemSettings;X-GNOME-Settings-Panel;X-Unity-Settings-Panel;
+X-GNOME-Settings-Panel=software-properties
+X-Unity-Settings-Panel=software-properties
+MimeType=text/x-apt-sources-list;
+X-KDE-SubstituteUID=true
+X-Ubuntu-Gettext-Domain=software-properties
+
+[/usr/share/applications/sol.desktop]
+Name=AisleRiot Solitaire
+Comment=Play many different solitaire games
+Exec=/usr/games/sol
+Icon=gnome-aisleriot
+Terminal=false
+Type=Application
+Categories=GNOME;GTK;Game;CardGame;
+Keywords=solitaire;cards;klondike;spider;freecell;patience;
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Product=aisleriot
+X-GNOME-Bugzilla-Component=Zwischenlager
+X-GNOME-Bugzilla-Version=3.18.2
+StartupNotify=true
+X-Ubuntu-Gettext-Domain=aisleriot
+
+[/usr/share/applications/sublime-text.desktop]
+Version=1.0
+Type=Application
+Name=Sublime Text
+GenericName=Text Editor
+Comment=Sophisticated text editor for code, markup and prose
+Exec=/opt/sublime_text/sublime_text %F
+Terminal=false
+MimeType=text/plain;
+Icon=sublime-text
+Categories=TextEditor;Development;Utility;
+StartupNotify=true
+Actions=Window;Document;
+X-Desktop-File-Install-Version=0.22
+
+[/usr/share/applications/system-config-printer.desktop]
+Name=Printers
+Comment=Configure printers
+Exec=system-config-printer
+Terminal=false
+Type=Application
+Icon=printer
+StartupNotify=true
+NotShowIn=KDE;GNOME;
+X-Ubuntu-Gettext-Domain=system-config-printer
+Categories=GNOME;GTK;Settings;HardwareSettings;X-GNOME-Settings-Panel;X-Unity-Settings-Panel;System;Printing;
+X-GNOME-Settings-Panel=printing
+X-Unity-Settings-Panel=printing
+Keywords=Printer;Queue;Print;Paper;Ink;Toner;
+X-Desktop-File-Install-Version=0.22
+
+[/usr/share/applications/thunderbird.desktop]
+Encoding=UTF-8
+Name=Thunderbird Mail
+Comment=Send and receive mail with Thunderbird
+GenericName=Mail Client
+Keywords=Email;E-mail;Newsgroup;Feed;RSS
+Exec=thunderbird %u
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=thunderbird
+Categories=Application;Network;Email;
+MimeType=x-scheme-handler/mailto;application/x-xpinstall;
+StartupNotify=true
+Actions=Compose;Contacts
+
+[/usr/share/applications/totem.desktop]
+Name=Videos
+Comment=Play movies
+Keywords=Video;Movie;Film;Clip;Series;Player;DVD;TV;Disc;
+Exec=totem %U
+Icon=totem
+Terminal=false
+Type=Application
+Categories=GTK;GNOME;AudioVideo;Player;Video;
+X-GNOME-DocPath=totem/totem.xml
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Product=totem
+X-GNOME-Bugzilla-Component=general
+X-GNOME-Bugzilla-Version=3.18.1
+X-GNOME-Bugzilla-OtherBinaries=totem-video-thumbnailer;totem-audio-preview;
+StartupNotify=true
+Actions=Play;Next;Previous;Mute;Fullscreen;
+X-Ubuntu-Gettext-Domain=totem
+X-AppStream-Ignore=true
+
+[/usr/share/applications/transmission-gtk.desktop]
+Name=Transmission
+GenericName=BitTorrent Client
+X-GNOME-FullName=Transmission BitTorrent Client
+Comment=Download and share files over BitTorrent
+Exec=transmission-gtk %U
+Icon=transmission
+Terminal=false
+TryExec=transmission-gtk
+Type=Application
+StartupNotify=true
+MimeType=application/x-bittorrent;x-scheme-handler/magnet;
+Categories=Network;FileTransfer;P2P;GTK;
+X-Ubuntu-Gettext-Domain=transmission
+X-AppInstall-Keywords=torrent 
+Actions=Pause;Minimize;
+
+[/usr/share/applications/ubuntu-amazon-default.desktop]
+Name=Amazon
+Type=Application
+Icon=amazon-store
+Exec=unity-webapps-runner --amazon --app-id=ubuntu-amazon-default
+
+[/usr/share/applications/unity-activity-log-manager-panel.desktop]
+Version=1.0
+X-Ubuntu-Gettext-Domain=activity-log-manager
+Name=Security & Privacy
+Comment=Privacy and Activity Manager
+Icon=activity-log-manager
+TryExec=unity-control-center
+Exec=unity-control-center activity-log-manager
+StartupNotify=true
+Type=Application
+Categories=GNOME;GTK;System;Archiving;Utility;Settings;X-GNOME-PersonalSettings;X-Unity-Settings-Panel;
+X-Unity-Settings-Panel=activity-log-manager
+OnlyShowIn=Unity;
+Keywords=privacy;activity;log;zeitgeist;diagnostics;error reports;
+X-AppInstall-Ignore=true
+X-Ayatana-Desktop-Shortcuts=X-Activity-Log-Manager;
+
+[/usr/share/applications/unity-appearance-panel.desktop]
+Name=Appearance
+Comment=Change the background and the theme
+Exec=unity-control-center appearance
+Icon=preferences-desktop-wallpaper
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=GNOME;GTK;Settings;DesktopSettings;X-Unity-Settings-Panel;X-GNOME-PersonalSettings
+OnlyShowIn=Unity;
+X-Unity-Settings-Panel=appearance
+Keywords=Wallpaper;Background;Screen;Desktop;Theme;Appearance;Launcher;Unity;Menus;
+X-Ubuntu-Gettext-Domain=unity-control-center
+
+[/usr/share/applications/unity-bluetooth-panel.desktop]
+Name=Bluetooth
+Comment=Configure Bluetooth settings
+Icon=bluetooth
+Exec=unity-control-center bluetooth
+Terminal=false
+Type=Application
+Categories=GTK;GNOME;Settings;X-GNOME-NetworkSettings;HardwareSettings;X-Unity-Settings-Panel;
+OnlyShowIn=Unity;
+StartupNotify=true
+X-Unity-Settings-Panel=bluetooth
+X-Ubuntu-Gettext-Domain=unity-control-center
+
+[/usr/share/applications/unity-color-panel.desktop]
+Name=Color
+Comment=Color management settings
+Exec=unity-control-center color
+Icon=unity-color-panel
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=GNOME;GTK;Settings;X-Unity-Settings-Panel;HardwareSettings
+OnlyShowIn=Unity;
+X-Unity-Settings-Panel=color
+Keywords=Color;ICC;Profile;Calibrate;Printer;Display;
+X-Ubuntu-Gettext-Domain=unity-control-center
+
+[/usr/share/applications/unity-control-center.desktop]
+Name=System Settings
+Icon=preferences-system
+Exec=unity-control-center --overview
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=GNOME;GTK;System;
+OnlyShowIn=Unity;
+Keywords=Preferences;Settings;
+X-Ubuntu-Gettext-Domain=unity-control-center
+
+[/usr/share/applications/unity-credentials-panel.desktop]
+Name=Online Accounts
+Comment=Online account credentials and settings
+Exec=unity-control-center credentials
+Icon=credentials-preferences
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=GNOME;GTK;Settings;DesktopSettings;X-Unity-Settings-Panel;X-GNOME-PersonalSettings;
+OnlyShowIn=Unity;
+X-Unity-Settings-Panel=credentials
+X-Ubuntu-Gettext-Domain=credentials-control-center
+
+[/usr/share/applications/unity-datetime-panel.desktop]
+Version=1.0
+Name=Time & Date
+Comment=Change your clock and date settings
+Icon=unity-datetime-panel
+TryExec=unity-control-center
+Exec=unity-control-center datetime
+StartupNotify=true
+Type=Application
+Categories=GNOME;GTK;Utility;DesktopSettings;Settings;X-GNOME-SystemSettings;X-Unity-Settings-Panel;
+X-Unity-Settings-Panel=datetime
+OnlyShowIn=Unity;
+X-Ubuntu-Gettext-Domain=unity-control-center
+
+[/usr/share/applications/unity-deja-dup-panel.desktop]
+Version=1.0
+X-Ubuntu-Gettext-Domain=deja-dup
+Name=Backups
+Comment=Change your backup settings
+Icon=deja-dup
+TryExec=unity-control-center
+Exec=unity-control-center deja-dup
+StartupNotify=true
+Type=Application
+Categories=Settings;Utility;Archiving;GNOME;GTK;X-GNOME-SystemSettings;X-Unity-Settings-Panel;
+X-Unity-Settings-Panel=deja-dup
+OnlyShowIn=Unity;
+Keywords=déjà;deja;dup;
+X-AppInstall-Ignore=true
+X-AppStream-Ignore=true
+Actions=BackUpNow;
+
+[/usr/share/applications/unity-display-panel.desktop]
+Name=Displays
+Comment=Change resolution and position of monitors and projectors
+Exec=unity-control-center display
+Icon=unity-display-panel
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=GNOME;GTK;Settings;HardwareSettings;X-Unity-Settings-Panel;
+OnlyShowIn=Unity;
+X-Unity-Settings-Panel=display
+Keywords=Panel;Projector;xrandr;Screen;Resolution;Refresh;
+X-Ubuntu-Gettext-Domain=unity-control-center
+
+[/usr/share/applications/unity-info-panel.desktop]
+Name=Details
+Comment=System Information
+Exec=unity-control-center info
+Icon=applications-system
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=GNOME;GTK;Settings;X-GNOME-SystemSettings;X-Unity-Settings-Panel;
+OnlyShowIn=Unity;
+X-Unity-Settings-Panel=info
+Keywords=device;system;information;memory;processor;version;default;application;preferred;cd;dvd;usb;audio;video;disc;removable;media;autorun;
+X-Ubuntu-Gettext-Domain=unity-control-center
+
+[/usr/share/applications/unity-keyboard-panel.desktop]
+Name=Keyboard
+Comment=Change keyboard settings
+Exec=unity-control-center keyboard
+Icon=input-keyboard
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=GNOME;GTK;Settings;HardwareSettings;X-Unity-Settings-Panel;
+OnlyShowIn=Unity;
+X-Unity-Settings-Panel=keyboard
+Keywords=Shortcut;Repeat;Blink;
+X-Ubuntu-Gettext-Domain=unity-control-center
+
+[/usr/share/applications/unity-lens-photos.desktop]
+Categories=Photography;
+Name=Photos lens for Unity
+GenericName=unity-lens-photos
+Icon=unity-lens-photos
+Terminal=false
+Type=Application
+X-Ubuntu-Gettext-Domain=unity-lens-photos
+
+[/usr/share/applications/unity-mouse-panel.desktop]
+Name=Mouse & Touchpad
+Comment=Set your mouse and touchpad preferences
+Exec=unity-control-center mouse
+Icon=input-mouse
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=GNOME;GTK;Settings;HardwareSettings;X-Unity-Settings-Panel;
+OnlyShowIn=Unity;
+X-Unity-Settings-Panel=mouse
+Keywords=Trackpad;Pointer;Click;Tap;Double;Button;Trackball;
+X-Ubuntu-Gettext-Domain=unity-control-center
+
+[/usr/share/applications/unity-network-panel.desktop]
+Name=Network
+Comment=Network settings
+Exec=unity-control-center network
+Icon=network-workgroup
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=GNOME;GTK;Settings;HardwareSettings;X-Unity-Settings-Panel;
+OnlyShowIn=Unity;
+X-Unity-Settings-Panel=network
+Keywords=Network;Wireless;IP;LAN;Proxy;
+X-Ubuntu-Gettext-Domain=unity-control-center
+
+[/usr/share/applications/unity-power-panel.desktop]
+Name=Power
+Comment=Power management settings
+Exec=unity-control-center power
+Icon=unity-power-panel
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=GNOME;GTK;Settings;DesktopSettings;X-Unity-Settings-Panel;HardwareSettings
+OnlyShowIn=Unity;
+X-Unity-Settings-Panel=power
+Keywords=Power;Sleep;Suspend;Hibernate;Battery;
+X-Ubuntu-Gettext-Domain=unity-control-center
+
+[/usr/share/applications/unity-region-panel.desktop]
+Name=Text Entry
+Comment=Change your keyboard or input method settings
+Exec=unity-control-center region
+Icon=preferences-desktop-keyboard-shortcuts
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=GNOME;GTK;Settings;DesktopSettings;X-Unity-Settings-Panel;X-GNOME-PersonalSettings
+OnlyShowIn=Unity;
+X-Unity-Settings-Panel=region
+Keywords=Language;Layout;Keyboard;Input Method;Text Entry;
+X-Ubuntu-Gettext-Domain=unity-control-center
+
+[/usr/share/applications/unity-scope-gdrive.desktop]
+Categories=Office;
+GenericName=unity-scope-gdrive
+Icon=unity-scope-gdrive
+Name=Google Drive scope for Unity
+NoDisplay=true
+Terminal=false
+Type=Application
+
+[/usr/share/applications/unity-screen-panel.desktop]
+Name=Brightness & Lock
+Comment=Screen brightness and lock settings
+Exec=unity-control-center screen
+Icon=system-lock-screen
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=GNOME;GTK;Settings;DesktopSettings;X-Unity-Settings-Panel;X-GNOME-PersonalSettings
+OnlyShowIn=Unity;
+X-Unity-Settings-Panel=screen
+Keywords=Brightness;Lock;Dim;Blank;Monitor;
+X-Ubuntu-Gettext-Domain=unity-control-center
+
+[/usr/share/applications/unity-sound-panel.desktop]
+Name=Sound
+Comment=Change sound volume and sound events
+Exec=unity-control-center sound
+Icon=unity-sound-panel
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=GNOME;GTK;Settings;HardwareSettings;X-Unity-Settings-Panel;
+OnlyShowIn=Unity;
+X-Unity-Settings-Panel=sound
+Keywords=Card;Microphone;Volume;Fade;Balance;Bluetooth;Headset;
+X-Ubuntu-Gettext-Domain=unity-control-center
+
+[/usr/share/applications/unity-universal-access-panel.desktop]
+Name=Universal Access
+Comment=Universal Access Preferences
+Exec=unity-control-center universal-access
+Icon=preferences-desktop-accessibility
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=GNOME;GTK;Settings;X-GNOME-SystemSettings;X-Unity-Settings-Panel;
+OnlyShowIn=Unity;
+X-Unity-Settings-Panel=universal-access
+Keywords=Keyboard;Mouse;a11y;Accessibility;Contrast;Zoom;Screen Reader;text;font;size;AccessX;Sticky Keys;Slow Keys;Bounce Keys;Mouse Keys;
+X-Ubuntu-Gettext-Domain=unity-control-center
+
+[/usr/share/applications/unity-user-accounts-panel.desktop]
+Name=User Accounts
+Comment=Add or remove users
+Exec=unity-control-center user-accounts
+Icon=system-users
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=System;Settings;X-Unity-Settings-Panel;X-GNOME-SystemSettings
+OnlyShowIn=Unity;
+X-Unity-Settings-Panel=user-accounts
+Keywords=Login;Name;Fingerprint;Avatar;Logo;Face;Password;
+X-Ubuntu-Gettext-Domain=unity-control-center
+
+[/usr/share/applications/unity-wacom-panel.desktop]
+Name=Wacom Tablet
+Comment=Set button mappings and adjust stylus sensitivity for graphics tablets
+Exec=unity-control-center wacom
+Icon=input-tablet
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=GNOME;GTK;Settings;HardwareSettings;X-Unity-Settings-Panel;
+OnlyShowIn=Unity;
+X-Unity-Settings-Panel=wacom
+Keywords=Tablet;Wacom;Stylus;Eraser;Mouse;
+X-Ubuntu-Gettext-Domain=unity-control-center
+
+[/usr/share/applications/unitywebappsqmllauncher.desktop]
+Type=Application
+Terminal=false
+Exec=/usr/bin/unity-webapps-qml-launcher $@
+Name=Unity Webapps QML Test Launcher
+Icon=qmlscene
+NoDisplay=true
+X-Ubuntu-Touch=true
+
+[/usr/share/applications/update-accounts.desktop]
+Name=Account update tool
+Exec=/usr/lib/x86_64-linux-gnu/update-accounts
+NoDisplay=true
+Type=Application
+X-Ubuntu-Gettext-Domain=credentials-control-center
+
+[/usr/share/applications/update-manager.desktop]
+Name=Software Updater
+GenericName=Software Updates
+Comment=Show and install available updates
+Exec=/usr/bin/update-manager
+Icon=system-software-update
+Terminal=false
+Type=Application
+Categories=System;Settings;
+X-Ubuntu-Gettext-Domain=update-manager
+X-Unity-IconBackgroundColor=#4c9e39
+
+[/usr/share/applications/usb-creator-gtk.desktop]
+Name=Startup Disk Creator
+GenericName=Startup Disk Creator
+Comment=Create a startup disk using a CD or disc image
+Exec=usb-creator-gtk
+Icon=usb-creator-gtk
+Terminal=false
+Type=Application
+Categories=System;Settings;GTK;HardwareSettings;
+X-Ubuntu-Gettext-Domain=usbcreator
+
+[/usr/share/applications/vim.desktop]
+Name=Vim
+GenericName=Text Editor
+Comment=Edit text files
+TryExec=vim
+Exec=vim %F
+Terminal=true
+Type=Application
+Icon=gvim
+Categories=Utility;TextEditor;
+StartupNotify=false
+MimeType=text/english;text/plain;text/x-makefile;text/x-c++hdr;text/x-c++src;text/x-chdr;text/x-csrc;text/x-java;text/x-moc;text/x-pascal;text/x-tcl;text/x-tex;application/x-shellscript;text/x-c;text/x-c++;
+
+[/usr/share/applications/vino-preferences.desktop]
+Name=Desktop Sharing
+Comment=Choose how other users can remotely view your desktop
+Exec=vino-preferences
+Icon=preferences-desktop-remote-desktop
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=GNOME;GTK;Settings;X-GNOME-NetworkSettings;RemoteAccess;Network;
+OnlyShowIn=Unity;
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Product=vino
+X-GNOME-Bugzilla-Component=Preferences Dialog
+X-GNOME-Bugzilla-Version=3.8.1
+X-Ubuntu-Gettext-Domain=vino
+
+[/usr/share/applications/webbrowser-app.desktop]
+Version=1.0
+Name=Browser
+GenericName=Web Browser
+Comment=Browse the World Wide Web
+Keywords=Internet;WWW;Browser;Web;Explorer
+Type=Application
+Icon=/usr/share/webbrowser-app/webbrowser-app.png
+Exec=webbrowser-app %u
+Terminal=false
+Categories=Network;WebBrowser;
+MimeType=text/html;text/xml;application/xhtml+xml;x-scheme-handler/http;x-scheme-handler/https;
+X-Ubuntu-Touch=true
+X-Ubuntu-Gettext-Domain=webbrowser-app
+X-Ubuntu-Single-Instance=true
+X-Ubuntu-Default-Department-ID=web-browsers
+X-Screenshot=/usr/share/webbrowser-app/screenshot.png
+X-Ubuntu-Splash-Color=#FFFFFF
+
+[/usr/share/applications/xdiagnose.desktop]
+Name=xdiagnose
+GenericName=Diagnose Graphics Issues
+Comment=X.org Diagnostic and Repair Utility
+Exec=pkexec xdiagnose
+Icon=/usr/share/xdiagnose/icons/microscope.svg
+Terminal=false
+Type=Application
+Categories=System;Settings;
+X-Ubuntu-Gettext-Domain=xdiagnose
+
+[/usr/share/applications/yelp.desktop]
+Name=Help
+Comment=Get help with Unity
+Keywords=documentation;information;manual;
+OnlyShowIn=GNOME;Unity;
+Exec=yelp %u
+Icon=help-browser
+StartupNotify=true
+Terminal=false
+Type=Application
+Categories=GNOME;GTK;Core;Documentation;Utility;
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Product=Yelp
+X-GNOME-Bugzilla-Component=general
+X-GNOME-Bugzilla-Version=3.18.1
+MimeType=x-scheme-handler/ghelp;x-scheme-handler/help;x-scheme-handler/info;x-scheme-handler/man;
+X-Ubuntu-Gettext-Domain=yelp
+
